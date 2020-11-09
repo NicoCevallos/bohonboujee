@@ -1,5 +1,5 @@
 <script>
-	import Hero from "../components/Hero.svelte";
+	import HeroTitle from "../components/HeroTitle.svelte";
 	import TitleBackground from "../components/TitleBackground.svelte";
 </script>
 
@@ -36,18 +36,22 @@
 			display: flex;
 		}
 		.title {
-			width: 40%;
+			width: 35%;
+			min-width: 310px;
 		}
 		.p {
-			width: 60%;
+			width: 65%;
 		}
 	}
 </style>
 
-<Hero
-	imgHeroDesktop="/images/hero/about_desktop.png"
-	imgHeroMobile="/images/hero/about_mobile.png"
+<HeroTitle
+	desktopImgSrc="/images/hero/about_desktop.png"
+	mobileImgSrc="/images/hero/about_mobile.png"
+	title="About Steoh"
+	hideTitleOnDesktop="about steoh"
 />
+
 <div class="textContainer">
 	<div class="title">
 		<TitleBackground>About Steoh</TitleBackground>
