@@ -60,6 +60,7 @@
 			width: 9%;
 			top: 17px;
 			max-width: 168px;
+			z-index: 50;
 		}
 
 		.menuContainer {

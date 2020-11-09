@@ -1,111 +1,101 @@
 <script>
-	import ImageWithGoldenBorder from "../components/ImageWithGoldenBorder.svelte";
-	import List from "../components/List.svelte";
-
-	let products = [
-		{
-			imgSrc: "/images/products/necklaces.png",
-			text: "Minimal Double-Strand Hoop Pendant Necklace",
-			price: "$35",
-			id: "?hl=es",
-		},
-
-		{
-			imgSrc: "/images/products/handbag.png",
-			text: "Minimal Double-Strand Hoop Pendant Necklace",
-			price: "$35",
-			id: "?hl=es",
-		},
-
-		{
-			imgSrc: "/images/products/earrings_1.png",
-			text: "Minimal Double-Strand Hoop Pendant Necklace",
-			price: "$35",
-		},
-
-		{
-			imgSrc: "/images/products/earrings_2.png",
-			text: "Minimal Double-Strand Hoop Pendant Necklace",
-			price: "$35",
-		},
-
-		{
-			imgSrc: "/images/products/earrings_3.png",
-			text: "Minimal Double-Strand Hoop Pendant Necklace",
-			price: "$35",
-		},
-
-		{
-			imgSrc: "/images/products/bracelet_1.png",
-			text: "Minimal Double-Strand Hoop Pendant Necklace",
-			price: "$35",
-		},
-
-		{
-			imgSrc: "/images/products/earrings_4.png",
-			text: "Minimal Double-Strand Hoop Pendant Necklace",
-			price: "$35",
-		},
-
-		{
-			imgSrc: "/images/products/bracelet_2.png",
-			text: "Minimal Double-Strand Hoop Pendant Necklace",
-			price: "$35",
-		},
-	];
-
-	import ImagesWithTitleLooking from "../components/ImagesWithTitleLooking.svelte";
-	import Header from "../components/Header.svelte";
 	import HeroTitle from "../components/HeroTitle.svelte";
-	import HomeHero from "../components/HomeHero.svelte";
-	import Hero from "../components/Hero.svelte";
-	import Input from "../components/Input.svelte";
-	import Textarea from "../components/Textarea.svelte";
-	import Label from "../components/Label.svelte";
-	import Footer from "../components/Footer.svelte";
-
-	let value;
-	let value1 = "hola soy pepito";
+	import TitleBackground from "../components/TitleBackground.svelte";
 </script>
 
-<svelte:head>
-	<title>About</title>
-</svelte:head>
+<style>
+	.textContainer {
+		width: 100%;
+	}
 
-<h1>About this site</h1>
-<Header />
-<Input bind:value placeholder="enter your email " />
-<Textarea bind:value="{value1}" />
-
-<p>{value}</p>
-<p>{value1}</p>
-
-<ImageWithGoldenBorder imgSrc="/images/products/bracelet_1.png" />
+	p {
+		font-family: Prompt;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 36px;
+		letter-spacing: 0.03em;
+		margin-top: 0px;
+		margin-bottom: 36px;
+	}
+	.golden {
+		color: #bda37b;
+	}
+	@media (max-width: 767.88px) {
+		.title {
+			display: none;
+		}
+		.p {
+			margin: 23px 23px 0 32px;
+		}
+	}
+	@media (min-width: 768px) {
+		.textContainer {
+			width: 89%;
+			margin: 82px auto;
+			max-width: 1620px;
+			display: flex;
+		}
+		.title {
+			width: 35%;
+			min-width: 310px;
+		}
+		.p {
+			width: 65%;
+		}
+	}
+</style>
 
 <HeroTitle
-	desktopImgSrc="/images/hero/contact_desktop.png"
+	desktopImgSrc="/images/hero/about_desktop.png"
 	mobileImgSrc="/images/hero/about_mobile.png"
-	title="About Steph"
+	title="About Steoh"
+	hideTitleOnDesktop="about steoh"
 />
 
-<HomeHero
-	homeImgSrc="/images/hero/home_photos.png"
-	mobileImgSrc="/images/hero/home_mobile.png"
-	desktopImgSrc="/images/hero/home_desktop.png"
-/>
+<div class="textContainer">
+	<div class="title">
+		<TitleBackground>About Steoh</TitleBackground>
+	</div>
 
-<Hero
-	imgHeroDesktop="/images/hero/about_desktop.png"
-	imgHeroMobile="/images/hero/about_mobile.png"
-/>
+	<div class="p">
+		<p>
+			Stephanie Cogan was born in England and moved to New Jersey with her
+			family when she was in 1st grade. Since she was little, she has always
+			loved fashion. Often found playing dress up or styling her Barbies!
+		</p>
 
-<List products="{products}" />
+		<p>
+			She grew up in Chatham, N.J. and attended the University of Tampa in
+			Florida where she received a degree in elementary education and met the
+			love of her life Matt. They dated for 8 years until he finally popped the
+			question and they married in 2016.
+		</p>
 
-<ImagesWithTitleLooking />
+		<p class="golden">
+			The best day of Steph and Matt’s life was when she gave birth to their
+			son, Bishop in October 2018. It was then that she realized she wanted to
+			have more time with her baby boy and to make a change to be a better mommy
+			and wife!
+		</p>
 
-<Label label="Name">
-	<Input bind:value placeholder=" " />
-</Label>
+		<p>
+			Boho and Boujee launched in March 2020. At the time, she only offered
+			clothing from Maverick the Collection, motivated to be able to style and
+			dress women of all shapes and sizes at an appropriate price point! Her
+			main goal, however, is to have women looking and feeling beautiful in the
+			skin they’re in. No one should have to spend lots of money to feel good.
+			Steph realized that accessories can make an outfit pop! It was in the
+			summer of 2020 that she realized she wanted more and wanted to expand!
+		</p>
 
-<Footer />
+		<p>
+			All accessories and gifts are hand picked by Steph herself. She trials
+			them and only finds things that she thinks her Boujee babes will love!
+		</p>
 
+		<p class="golden">
+			She thanks you for being here and supporting her small business and
+			passion for fashion!
+		</p>
+	</div>
+</div>
