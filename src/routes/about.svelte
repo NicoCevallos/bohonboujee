@@ -4,42 +4,47 @@
 </script>
 
 <style>
-	.textContainer {
-		width: 100%;
-	}
-
 	p {
 		font-family: Prompt;
-		font-weight: 700;
 		font-size: 24px;
 		line-height: 36px;
 		letter-spacing: 0.03em;
 		margin-top: 0px;
 		margin-bottom: 36px;
+		color: #000000;
 	}
+
 	.golden {
 		color: #bda37b;
+		font-weight: bold;
+		font-size: 31px;
+		line-height: 46px;
 	}
+
 	@media (max-width: 767.88px) {
 		.title {
 			display: none;
 		}
-		.p {
+
+		.paragraphs {
 			margin: 23px 23px 0 32px;
 		}
 	}
+
 	@media (min-width: 768px) {
-		.textContainer {
+		section {
 			width: 89%;
 			margin: 82px auto;
 			max-width: 1620px;
 			display: flex;
 		}
+
 		.title {
 			width: 35%;
-			min-width: 310px;
+			min-width: 315px;
 		}
-		.p {
+
+		.paragraphs {
 			width: 65%;
 		}
 	}
@@ -48,16 +53,16 @@
 <HeroTitle
 	desktopImgSrc="/images/hero/about_desktop.png"
 	mobileImgSrc="/images/hero/about_mobile.png"
-	title="About Steoh"
-	hideTitleOnDesktop="about steoh"
+	title="About Steph"
+	hideTitleOnDesktop
 />
 
-<div class="textContainer">
+<section>
 	<div class="title">
-		<TitleBackground>About Steoh</TitleBackground>
+		<TitleBackground>About Steph</TitleBackground>
 	</div>
 
-	<div class="p">
+	<div class="paragraphs">
 		<p>
 			Stephanie Cogan was born in England and moved to New Jersey with her
 			family when she was in 1st grade. Since she was little, she has always
@@ -98,4 +103,4 @@
 			passion for fashion!
 		</p>
 	</div>
-</div>
+</section>
