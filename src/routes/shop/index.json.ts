@@ -9,6 +9,8 @@ const contents = JSON.stringify(
 			imgSrc: product.imgSrc,
 			text: product.text,
 			price: product.price,
+			category: product.category,
+			score: product.score,
 		};
 	}),
 );

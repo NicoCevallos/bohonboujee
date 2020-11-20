@@ -1,2 +1,2 @@
 declare module "@app";
-export * from "./posts";
+export * from "./products";
