@@ -40,5 +40,5 @@
 <a target="_blank" href="https://www.google.com/?hl=es{id}">
 	<ImageWithGoldenBorder imgSrc="{imgSrc}" />
 	<div class="text">{text}</div>
-	<div class="price">{price}</div>
+	<div class="price">$ {price}</div>
 </a>

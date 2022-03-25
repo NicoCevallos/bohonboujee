@@ -1,9 +1,9 @@
 <script>
 	import Hero from "./Hero.svelte";
 	import TitleBackground from "./TitleBackground.svelte";
-	export let desktopImgSrc;
-	export let mobileImgSrc;
-	export let title;
+	export let desktopImgSrc = "";
+	export let mobileImgSrc = "";
+	export let title = "";
 	export let hideTitleOnDesktop;
 </script>
 
